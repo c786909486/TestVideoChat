@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_surface_container"
+        >
+
+
+
+        <com.hyphenate.media.EMCallSurfaceView
+            android:id="@+id/opposite_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.hyphenate.media.EMCallSurfaceView
+            android:id="@+id/local_surface"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="96dp"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_call"
+                android:text="拨打"
+                android:visibility="gone"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="接听"
+                android:id="@+id/btn_answer"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="拒绝"
+                android:id="@+id/btn_refuse"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/btn_end"
+                android:text="结束"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text=""
+            android:textColor="#8d4cb6"
+            android:textSize="15sp"
+            android:id="@+id/tv_status"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
